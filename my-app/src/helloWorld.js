@@ -1,14 +1,5 @@
 import React from 'react';
 
-const HelloWorld = () => {
-
-    function sayHello() {
-        alert('Hello, World!');
-    }
-
-    return (
-        <button onClick={sayHello}>Click me!</button>
-    );
-};
+const HelloWorld = () => <h1>Hello, World!</h1>;
 
 export default HelloWorld;
