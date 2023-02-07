@@ -1,4 +1,4 @@
-import React from 'react';
+import logo from './logo.svg';
 import HelloWorld from './HelloWorld';
 import './App.css';
 
