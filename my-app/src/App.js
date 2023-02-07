@@ -1,12 +1,8 @@
-import logo from './logo.svg';
-import HelloWorld from './HelloWorld';
-import './App.css';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <HelloWorld />
-    </div>
+    <h1>Hello, World!</h1>
   );
 }
 
