@@ -1,5 +1,5 @@
 import React from 'react';
-import HelloWorld from './helloWorld';
+import HelloWorld from './components/helloWorld';
 
 function App() {
   return (
