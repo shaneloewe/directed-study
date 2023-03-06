@@ -2,7 +2,6 @@
   "headers": [
     {
       "source": "(.*)",
-      "destination": "/api/index",
       "headers": [
         {
           "key": "Access-Control-Allow-Credentials",
