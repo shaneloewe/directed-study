@@ -6,6 +6,7 @@ import About from './pages/About';
 import Privacy from './pages/Privacy';
 import TOS from './pages/TOS';
 import Login from './pages/Login';
+import Callback from './pages/Callback';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms-of-service" element={<TOS />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/callback" element={<Callback />} />
         </Routes>
         <Footer />
       </div>
