@@ -4,20 +4,20 @@ function Hello(props) {
     const [data, setData] = useState([{}])
 
     useEffect(() => {
-        fetch(`http://127.0.0.1:5000/${props.name}`)
+        fetch(`http://127.0.0.1:5000/${props.userId}`)
             .then(res => res.json())
             .then(data => {
                 setData(data)
                 console.log(data)
+                console.log(data.userId)
             })
-    }, [props.name])
+    }, [props.userId])
 
     return (
         <div>
-            <h1>Hello {props.name}</h1>
-            <p>{JSON.stringify(data)}</p>
+            <p>{data.userId}</p>
         </div>
     )
 }
 
-export default Hello;
+export default TempAuth;

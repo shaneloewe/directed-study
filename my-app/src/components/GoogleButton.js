@@ -1,4 +1,11 @@
-// Header.js
+
+// This component is not operational right now, but when it does work
+// the data-login_uri, callback url, redirect_uri (same thing), will
+// redirect to the back-end server and call the getUserId function
+// which will verify the user and set them as the currentUser, which
+// will be a global variable in a config file that all of my .py files
+// will import. When the function is done, we're back in this file and
+// will be redirected to the Home page.
 
 function GoogleButton() {
     return (

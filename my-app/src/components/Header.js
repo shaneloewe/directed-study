@@ -1,20 +1,34 @@
-// Header.js
-
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {
+    Nav,
+    NavLink,
+    NavMenu,
+    Logo
+} from '../theme/NavbarElements';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import LogoSrc from './../images/header_logo.png';
 
-function Header() {
+const Header = () => {
     return (
-        <header>
-            <nav>
-                <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/login">Login</Link></li>
-                </ul>
-            </nav>
-        </header>
+        <>
+            <Nav>
+                <Navbar.Brand href="/">
+                    <Logo src={LogoSrc} />
+                </Navbar.Brand>
+                <NavMenu>
+                    <NavLink to='/about' activeStyle>
+                        ABOUT
+                    </NavLink>
+                    <NavLink to='/login' activeStyle>
+                        LOGIN
+                    </NavLink>
+                </NavMenu>
+            </Nav>
+
+
+        </>
     );
-}
+};
 
 export default Header;

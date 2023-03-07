@@ -1,6 +1,10 @@
 // Footer.js
 
 import React from 'react';
+import { Paragraph, } from '../theme/BodyElements';
+import { Wrapper } from '../theme/GlobalStyles';
+import { Bottom } from '../theme/FooterElements';
+
 
 function Footer() {
     return (
